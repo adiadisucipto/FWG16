@@ -1,14 +1,3 @@
-// function FazzFood(harga, voucher, jarak, pajak){
-//     let totalHarga = harga
-//     if(voucher === "FAZZFOOD50"{
-//         if(harga >= 50000){
-//             if()
-//         }
-//     })
-// }
-
-
-
 function FazzFood(harga, voucher, jarak, pajak) {
     let totalHarga = harga;
     console.log(`Harga = ${harga}`)
