@@ -5,8 +5,6 @@ let n = kalimat.length - 1;
 let temp = "";
 let j = 0;
 
-//b = ["Saya", "belajar", "JavaScript"];
-
 for(let i = 0; i <= n; i++){
     if(kalimat[i] != " "){
         temp += kalimat[i];

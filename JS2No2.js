@@ -1,12 +1,15 @@
 const searchName = (name, max , callback) => {
-    //logika nyari nama
     const names = ['Abigail','Alexandra','Alison','Amanda','Angela','Bella','Carol','Caroline','Carolyn','Deirdre','Diana','Elizabeth','Ella','Faith','Olivia','Penelope'];
+    //logika nyari nama
     let result = names.filter((Element) => 
         Element.toLowerCase().includes(name)
     )
     callback(result.slice(0, max))
 }
 
+
+// penggunaan callback
+// penulisan if
 const showName = (quote) =>{
     if(quote.length > 0){
         console.log(quote)
@@ -15,4 +18,4 @@ const showName = (quote) =>{
     }
 }
 
-searchName("zx", 10, showName)
+searchName("an", 3, showName)

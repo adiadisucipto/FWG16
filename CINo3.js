@@ -10,8 +10,6 @@ function FazzFood(harga, voucher, jarak, pajak) {
         } else{
             potonganHarga = harga * 0.5
         }
-        console.log(`Potongan =  ${potonganHarga}`)
-        totalHarga -= potonganHarga;
       }
     } else if (voucher === "DITRAKTIR60") {
       if (harga >= 25000) {
@@ -25,6 +23,8 @@ function FazzFood(harga, voucher, jarak, pajak) {
         totalHarga -= potonganHarga;
       }
     }
+    console.log(`Potongan =  ${potonganHarga}`)
+    totalHarga -= potonganHarga;
 
     let biayaPengiriman = 0;
     if(jarak <= 2){

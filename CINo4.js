@@ -27,6 +27,6 @@ function divideAndSort(deretAngka) {
   }
   
   // Contoh penggunaan fungsi urutkanDanGabung:
-  const hasil = divideAndSort('50120349');
+  const hasil = divideAndSort('5956560159466056');
   console.log("Hasil:", hasil);
   

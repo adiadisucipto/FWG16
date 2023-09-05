@@ -6,6 +6,7 @@ function SeleksiNilai(nilaiAwal, nilaiAkhir, dataArray){
         return "Jumlah angka dalam dataArray harus lebih dari 5"
     }
 
+    // Urutan kode diperhatikan
     let sorted = dataArray.sort((a, b) => a - b);
 
     let result = sorted.filter(
