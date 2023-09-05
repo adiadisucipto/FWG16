@@ -1,4 +1,4 @@
-function urutkanDanGabung(deretAngka) {
+function divideAndSort(deretAngka) {
     const bilangan = [];
     let bilanganSaatIni = '';
   
@@ -27,7 +27,6 @@ function urutkanDanGabung(deretAngka) {
   }
   
   // Contoh penggunaan fungsi urutkanDanGabung:
-  const deretAngka = '50120349';
-  const hasil = urutkanDanGabung(deretAngka);
+  const hasil = divideAndSort('50120349');
   console.log("Hasil:", hasil);
   

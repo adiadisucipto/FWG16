@@ -4,25 +4,25 @@ function FazzFood(harga, voucher, jarak, pajak) {
   
     if (voucher === "FAZZFOOD50") {
       if (harga >= 50000) {
-        let potongan = 0;
-        if(potongan >= 500000){
-            potongan = 50000
+        let potongan = harga * 0.5
+        if(potongan >= 50000){
+            potonganHarga = 50000
         } else{
-            potongan = harga * 0.5
+            potonganHarga = harga * 0.5
         }
-        console.log(`Potongan =  ${potongan}`)
-        totalHarga -= potongan;
+        console.log(`Potongan =  ${potonganHarga}`)
+        totalHarga -= potonganHarga;
       }
     } else if (voucher === "DITRAKTIR60") {
       if (harga >= 25000) {
-        let potongan = 0
+        let potongan = harga * 0.6
         if(potongan >= 30000){
-            potongan = 30000
+            potonganHarga = 30000
         } else{
-            potongan = harga * 0.6
+            potonganHarga = harga * 0.6
         }
         console.log(`Potongan =  ${potongan}`)
-        totalHarga -= potongan;
+        totalHarga -= potonganHarga;
       }
     }
 
@@ -56,6 +56,6 @@ function FazzFood(harga, voucher, jarak, pajak) {
   const jarakPengiriman = 5; // dalam kilometer
   const dikenakanPajak = true;
   
-  const totalHargaAkhir = FazzFood(75000, "FAZZFOOD50", 5, true);
+  const totalHargaAkhir = FazzFood(300000, "FAZZFOOD50", 5, true);
   console.log("SubTotal:", totalHargaAkhir);
   
